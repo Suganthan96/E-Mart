@@ -35,7 +35,8 @@ E-MART/
 CREATE DATABASE grocery_app;
 USE grocery_app;
 ```
-### Create Tables
+
+## Create Tables
 ```sql
 -- Users Table
 CREATE TABLE users (
