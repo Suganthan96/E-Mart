@@ -4,19 +4,31 @@ A simple **Grocery Management Application** with a **Node.js backend** and **MyS
 
 ## 📂 Project Structure
 ```
-grocery-app/
-├── server.js             # Entry point for the Node.js server
-├── package.json          # Project dependencies
-├── config/               # Configuration files
-│   └── db.js             # MySQL database connection
-├── public/               # Frontend files
-│   ├── index.html        # Login page
-│   ├── cart.html         # Cart page
-│   └── grocery.html      # Grocery list page
-└── routes/               # Route handlers
-    └── api.js            # API endpoints for login, cart, grocery
-```
-
+E-MART/
+├── config/
+│   └── db.js                  # Database configuration (MongoDB/MySQL)
+├── node_modules/              # Installed dependencies (auto-generated)
+├── public/                    # Static files (frontend)
+│   ├── cart.html              # Shopping cart page
+│   ├── grocery.html           # Grocery items page
+│   ├── index.html             # Homepage
+│   └── signup.html            # User registration page
+├── routes/
+│   ├── auth.js                # Authentication routes (login/signup)
+│   └── grocery.js             # Grocery item API routes
+├── views/                     # HTML templates (if using server-side rendering)
+│   ├── grocery.html           # Duplicate? (Move to `public/` if client-side)
+│   ├── header.html            # Shared header template
+│   ├── home.css               # Homepage styles
+│   ├── index.html             # Duplicate? (Consolidate with `public/index.html`)
+│   ├── login.css              # Login page styles
+│   └── login.html             # Login page template
+├── script.js                  # Frontend JavaScript (move to `public/`)
+├── server.js                  # Backend entry point (Express.js)
+├── styles.css                 # Global styles (move to `public/`)
+├── package.json               # Project metadata and dependencies
+├── package-lock.json          # Auto-generated dependency tree
+└── README.md                  # Project documentation
 ## 🗄️ Database Setup (MySQL)
 ### Create Database
 ```sql
