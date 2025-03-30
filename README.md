@@ -1,7 +1,7 @@
 # Grocery App
 
 A simple **Grocery Management Application** with a **Node.js backend** and **MySQL database**. The app allows users to login, view grocery items, add them to their cart, and track orders.
-
+```
 ## 📂 Project Structure
 E-MART/
 ├── config/
@@ -28,7 +28,7 @@ E-MART/
 ├── package.json               # Project metadata and dependencies
 ├── package-lock.json          # Auto-generated dependency tree
 └── README.md                  # Project documentation
-
+```
 
 ## 🗄️ Database Setup (MySQL)
 ### Create Database
