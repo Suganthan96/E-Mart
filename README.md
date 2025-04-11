@@ -2,30 +2,33 @@
 
 A simple **Grocery Management Application** with a **Node.js backend** and **MySQL database**. The app allows users to login, view grocery items, add them to their cart, and track orders.
 ```
-## 📂 Project Structure
-E-MART/
+GROCERY-APP/
+│
 ├── config/
-│   └── db.js                  # Database configuration (MongoDB/MySQL)
-├── node_modules/              # Installed dependencies (auto-generated)
-├── public/                    # Static files (frontend)
-│   ├── cart.html              # Shopping cart page
-│   ├── grocery.html           # Grocery items page
-│   ├── index.html             # Homepage
-│   └── signup.html            # User registration page
+│   └── db.js                 # Database configuration and connection
+│
+├── node_modules/            # Node.js dependencies
+│
+├── public/                  # Static frontend assets
+│   ├── cart.html            # Cart page
+│   ├── grocery.css          # Styles for grocery-related pages
+│   ├── header.html          # Common header layout
+│   ├── home.css             # Home page styles
+│   ├── home.html            # Home page
+│   ├── index.html           # Landing page
+│   ├── leaf.png             # Image asset (maybe logo/decoration)
+│   ├── login.css            # Login page styles
+│   ├── login.html           # Login page
+│   └── signup.html          # Signup page
+│
 ├── routes/
-│   ├── api.js                # Grocery item API routes
-├── views/                     # HTML templates (if using server-side rendering)
-│   ├── cart.html           # Duplicate? (Move to `public/` if client-side)
-│   ├── home.html            # Shared header template
-│   ├── home.css               # Homepage styles
-│   ├── index.html             # Duplicate? (Consolidate with `public/index.html`)
-│   ├── grocery.css              # Login page styles
-│   └── login.html
-│   └── login.css            # Login page template
-├── server.js                  # Backend entry point (Express.js)
-├── package.json               # Project metadata and dependencies
-├── package-lock.json          # Auto-generated dependency tree
-└── README.md                  # Project documentation
+│   └── api.js               # Backend API route handlers
+│
+├── package.json             # Project metadata & dependencies
+├── package-lock.json        # Exact versions of installed packages
+├── README.md                # Project documentation
+└── server.js                # Entry point for backend server
+
 ```
 
 ## 🗄️ Database Setup (MySQL)
